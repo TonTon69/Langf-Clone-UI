@@ -12,6 +12,30 @@ body {
     color: #000000;
     background-color: #fff;
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+.h2,
+h2 {
+    font-size: 1.4em;
+}
+.h5,
+h5 {
+    font-size: 1.1em;
+}
 .header .navbar {
     display: flex;
     padding: 30px 0;
@@ -70,8 +94,8 @@ body {
 .header .banner {
     position: relative;
     width: 100%;
-    height: 65vh;
-    margin-bottom: 2em;
+    height: 60vh;
+    margin-bottom: 1em;
 }
 .header .banner .bg {
     background-image: url(".././img/banner.png");
@@ -87,11 +111,13 @@ body {
     position: absolute;
     background-size: cover;
     background-position: bottom;
-    bottom: 0;
+    bottom: -2px;
     background-repeat: no-repeat;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
 }
 .header .search {
-    padding: 140px 0;
+    padding: 120px 0;
     position: relative;
     overflow: hidden;
 }
@@ -105,15 +131,141 @@ body {
     background-repeat: no-repeat;
     background-position: 50%;
 }
+@keyframes randomTransformAnimateLeft {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 10px;
+        top: 0px;
+    }
+    50% {
+        left: 10px;
+        top: 10px;
+    }
+    75% {
+        left: 0px;
+        top: 10px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes randomTransformAnimateRight {
+    0% {
+        right: 0px;
+        top: 0px;
+    }
+    25% {
+        right: 10px;
+        top: 0px;
+    }
+    50% {
+        right: 10px;
+        top: 10px;
+    }
+    75% {
+        right: 0px;
+        top: 10px;
+    }
+    100% {
+        right: 0px;
+        top: 0px;
+    }
+}
 .header .search .left {
     left: 0;
     background-image: url(".././img/left-search.png");
-    -webkit-animation: randomTransformAnimateLeft-data-v-4254364c 5s infinite;
-    animation: randomTransformAnimateLeft-data-v-4254364c 5s infinite;
+    -webkit-animation: randomTransformAnimateLeft 5s infinite;
+    animation: randomTransformAnimateLeft 5s infinite;
 }
 .header .search .right {
     right: 0;
     background-image: url(".././img/right-search.png");
-    -webkit-animation: randomTransformAnimateLeft-data-v-4254364c 5s infinite;
-    animation: randomTransformAnimateLeft-data-v-4254364c 5s infinite;
+    -webkit-animation: randomTransformAnimateRight 5s infinite;
+    animation: randomTransformAnimateRight 5s infinite;
+}
+.header .search .container {
+    max-width: 480px;
+}
+.header .search .container .input-group {
+    height: 60px;
+    background-color: #aa0b0b;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0.2em 0.5em rgb(0 0 0 / 30%);
+}
+.header .search .container .input-group input {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+.header .search .container .input-group input::placeholder {
+    color: #fff;
+}
+.header .search .container .input-group .input-group-icon button {
+    margin: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+}
+.header .search .container .input-group .input-group-icon button img {
+    transform: translate(1px, -1px);
+    width: 20px;
+    height: 20px;
+}
+.news a .section-title {
+    color: #fff;
+    display: inline-block;
+    border-radius: 0.3em;
+    background-color: #aa0b0b;
+    padding: 0.5em 1em 0.8em;
+    margin: 0 1em -1em;
+}
+.news .row .item {
+    background-image: url("https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/06/Marvel-pts.png");
+    background-size: cover;
+    background-position: 50%;
+    display: block;
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+    color: #fff;
+    border-radius: 0.3em;
+    overflow: hidden;
+    box-shadow: 0 0.2em 0.5em rgb(0 0 0 / 20%);
+}
+.news .row .item .wrap {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+.news .row .item .wrap .name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+.news .row .item .wrap .desc {
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+}
+.news .text-right .see-more {
+    background-color: #800100;
+    padding: 0.8em 1em 0.5em;
+    margin: -1em 1em 0;
+    color: #fff;
+    display: inline-block;
+    border-radius: 0.3em;
 }
