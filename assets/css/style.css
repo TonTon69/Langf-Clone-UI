@@ -272,7 +272,8 @@ h5 {
 .dishes .title {
     margin-bottom: -2em;
 }
-.dishes .title h2 {
+.dishes .title h2,
+.reviews .title h2 {
     background-color: #aa0b0b;
     display: inline-block;
     color: #fff;
@@ -309,4 +310,44 @@ h5 {
     line-height: 2em;
     margin: 0.5em 0;
     text-transform: uppercase;
+}
+
+.reviews .review-box .card {
+    color: black;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 20%);
+    text-decoration: none;
+}
+.reviews .review-box .card .card-body .user-avatar {
+    background-color: rgb(85, 139, 47);
+    width: 60px;
+    height: 60px;
+    line-height: 1.5em;
+    position: relative;
+    color: #fff;
+    border-radius: 50% !important;
+}
+.reviews .review-box .card .card-body .user-avatar span {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: baseline;
+    text-align: center;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    margin-top: -1em;
+    margin-left: -1em;
+    font-size: 1.5em;
+}
+.reviews .review-box .card .card-body .user-name .badge {
+    font-size: 0.8em;
+    color: white;
+    background-color: rgb(245, 127, 23);
+}
+.reviews .review-box .card .card-body .user-name .text-wrap {
+    line-height: 1.5em;
+    background-color: #aa0b0b;
 }
