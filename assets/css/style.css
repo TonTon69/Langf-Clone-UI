@@ -532,3 +532,15 @@ h5 {
     padding-top: 0 !important;
     padding-bottom: 1em !important;
 }
+
+footer {
+    color: #fff;
+    font-size: 10pt;
+    overflow: hidden;
+    background-color: #000;
+}
+footer a,
+footer a:hover {
+    color: #e53935;
+    font-weight: 700;
+}
