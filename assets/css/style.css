@@ -409,10 +409,11 @@ h5 {
     border-radius: 3px;
     float: left;
     width: 100%;
-    background-size: contain;
+    background-size: 100% auto;
     background-position: 50%;
     padding-top: 100%;
 }
+
 .swiper-slide .slider-box .logo .mask {
     width: 100%;
     background-image: linear-gradient(
@@ -522,6 +523,9 @@ h5 {
 
 .areas .list-group .list-group-item {
     color: #aa0b0b;
+}
+.areas .list-group .list-group-item:hover {
+    text-decoration: underline;
 }
 .areas .list-group .list-group-item.active {
     border-color: #aa0b0b;
