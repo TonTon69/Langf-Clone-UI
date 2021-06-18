@@ -36,6 +36,16 @@ h2 {
 h5 {
     font-size: 1.1em;
 }
+.btn-see-more {
+    color: #fff;
+    background-color: #aa0b0b;
+    border-color: #aa0b0b;
+}
+.btn-see-more:hover {
+    color: #fff;
+    background-color: #860909;
+    border-color: #7a0808;
+}
 .header .navbar {
     display: flex;
     padding: 30px 0;
@@ -274,7 +284,8 @@ h5 {
 }
 .dishes .title h2,
 .reviews .title h2,
-.my-5 .title h2 {
+.my-5 .title h2,
+.areas .title h2 {
     background-color: #aa0b0b;
     display: inline-block;
     color: #fff;
@@ -507,4 +518,17 @@ h5 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.areas .list-group .list-group-item {
+    color: #aa0b0b;
+}
+.areas .list-group .list-group-item.active {
+    border-color: #aa0b0b;
+    background-color: #aa0b0b;
+    color: #fff;
+}
+.areas .swiper-slide {
+    padding-top: 0 !important;
+    padding-bottom: 1em !important;
 }
