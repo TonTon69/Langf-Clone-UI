@@ -273,7 +273,8 @@ h5 {
     margin-bottom: -2em;
 }
 .dishes .title h2,
-.reviews .title h2 {
+.reviews .title h2,
+.my-5 .title h2 {
     background-color: #aa0b0b;
     display: inline-block;
     color: #fff;
@@ -347,7 +348,163 @@ h5 {
     color: white;
     background-color: rgb(245, 127, 23);
 }
+.reviews .review-box .card .card-body .user-name i span {
+    font-size: 0.8em;
+}
 .reviews .review-box .card .card-body .user-name .text-wrap {
     line-height: 1.5em;
     background-color: #aa0b0b;
+}
+.my-5 .slide-store {
+    position: relative;
+}
+.my-5 .slide-store .right-button,
+.my-5 .slide-store .left-button {
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    width: 40px;
+    height: 60px;
+    margin-top: -30px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+.my-5 .slide-store .left-button {
+    left: -7px;
+}
+.my-5 .slide-store .right-button {
+    right: -7px;
+}
+.swiper-slide {
+    width: 220px;
+    display: inline-block;
+}
+.swiper-slide a {
+    position: relative;
+    display: block;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em 0.5em rgb(0 0 0 / 20%);
+    color: #c33332;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #fff;
+    height: 100%;
+}
+.swiper-slide .slider-box .logo {
+    position: relative;
+    border-radius: 3px;
+    float: left;
+    width: 100%;
+    background-size: contain;
+    background-position: 50%;
+    padding-top: 100%;
+}
+.swiper-slide .slider-box .logo .mask {
+    width: 100%;
+    background-image: linear-gradient(
+        90deg,
+        transparent 70%,
+        rgba(0, 0, 0, 0.8)
+    );
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.swiper-slide .slider-box .logo .mask .slot {
+    position: absolute;
+    background-size: 100% 100%;
+    background-position: 50%;
+}
+.swiper-slide .slider-box .logo .mask .e-member {
+    background-image: url(".././img/e-member.png");
+    width: 30%;
+    height: 30%;
+    top: 0;
+    left: 0;
+}
+.swiper-slide .slider-box .logo .mask .order {
+    background-image: url(".././img/order.png");
+    width: 20%;
+    height: 20%;
+    top: 25%;
+    right: 0;
+}
+.swiper-slide .slider-box .logo .mask .delivery {
+    background-image: url(".././img/delivery.png");
+    width: 20%;
+    height: 20%;
+    top: 47%;
+    right: 0;
+}
+.swiper-slide .slider-box .logo .mask .rating {
+    position: absolute;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 0.9em;
+    top: 0.5em;
+    right: 0.5em;
+    color: #ffa000;
+    text-align: right;
+    height: 2em;
+    line-height: 2.1em;
+    padding: 0 0.6em;
+    border-radius: 1.2em;
+}
+.swiper-slide .slider-box .info {
+    line-height: 1.5em;
+    position: relative;
+    padding: 0.5em 0.5em 0.8em;
+    overflow: hidden;
+}
+.swiper-slide .slider-box .info .position {
+    background-color: #03a9f4;
+    color: #fff;
+    border-radius: 1em;
+    font-weight: 900;
+    font-size: 0.7em;
+    font-style: normal;
+    display: block;
+    text-align: center;
+    line-height: 1.6em;
+    margin-bottom: 0.3em;
+}
+.swiper-slide .slider-box .info .address,
+.swiper-slide .slider-box .info .stitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.swiper-slide .slider-box .info .stitle {
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 700;
+}
+.swiper-slide .slider-box .info .address {
+    font-style: italic;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    height: 1.5em;
+}
+.swiper-slide .slider-box .info .review {
+    font-size: 0.8em;
+    border-top: 1px solid #d3d3d3;
+    padding: 1em 0.5em 0;
+    position: relative;
+    height: 4em;
+    overflow: hidden;
+}
+.swiper-slide .slider-box .info .review .badge {
+    font-size: 1em;
+    color: white;
+    background-color: rgb(245, 127, 23);
+}
+.swiper-slide .slider-box .info .review .cmt {
+    font-size: 1em;
+    line-height: 1.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
