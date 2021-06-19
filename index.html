@@ -24,6 +24,10 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/css/swiper.min.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
@@ -33,7 +37,7 @@
                 <div class="navbar">
                     <div class="container">
                         <div class="logo">
-                            <a href="">
+                            <a href="/">
                                 <img
                                     src="./assets/img/logo.png"
                                     alt="logo"
@@ -44,7 +48,7 @@
                         <nav>
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">trang chủ</a>
+                                    <a class="nav-link" href="/">trang chủ</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">tin tức</a>
@@ -64,14 +68,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="banner">
+                <div
+                    class="banner"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                >
                     <div class="bg"></div>
                     <div class="overlay"></div>
                 </div>
                 <div class="search">
-                    <div class="left"></div>
+                    <div
+                        class="left"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                    ></div>
                     <div class="container">
-                        <div class="input-group">
+                        <div
+                            class="input-group"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <input
                                 class="form-control"
                                 type="text"
@@ -84,16 +100,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right"></div>
+                    <div
+                        class="right"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                    ></div>
                 </div>
             </div>
             <section class="news">
                 <div class="container-fluid">
-                    <a href="">
+                    <a href="" data-aos="fade-right">
                         <h2 class="section-title">Tin tức</h2>
                     </a>
                     <div class="row">
-                        <div class="p-2 col-md-6 col-12">
+                        <div
+                            class="p-2 col-md-6 col-12"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="item">
                                 <div class="wrap">
                                     <h5 class="name">
@@ -112,7 +136,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="p-2 col-md-6 col-12">
+                        <div
+                            class="p-2 col-md-6 col-12"
+                            data-aos="fade-left"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="item">
                                 <div class="wrap">
                                     <h5 class="name">
@@ -131,7 +159,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="p-2 col-md-4 col-12">
+                        <div
+                            class="p-2 col-md-4 col-12"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="item">
                                 <div class="wrap">
                                     <h5 class="name">
@@ -150,7 +182,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="p-2 col-md-4 col-12">
+                        <div
+                            class="p-2 col-md-4 col-12"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="item">
                                 <div class="wrap">
                                     <h5 class="name">
@@ -169,7 +205,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="p-2 col-md-4 col-12">
+                        <div
+                            class="p-2 col-md-4 col-12"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="item">
                                 <div class="wrap">
                                     <h5 class="name">
@@ -197,7 +237,11 @@
             <section class="dishes mt-5 mb-5">
                 <div class="container-fluid">
                     <div class="row align-items-center justify-content-center">
-                        <div class="col-lg-8 col-12">
+                        <div
+                            class="col-lg-8 col-12"
+                            data-aos="zoom-in"
+                            data-aos-duration="1000"
+                        >
                             <div class="text-center title">
                                 <h2>Hôm nay ăn gì?</h2>
                             </div>
@@ -299,11 +343,15 @@
             </section>
             <section class="reviews">
                 <div class="container">
-                    <div class="text-center title mb-4">
+                    <div class="text-center title mb-4" data-aos="fade-down">
                         <h2>Review gần đây</h2>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4 p-2 review-box">
+                        <div
+                            class="col-12 col-md-6 col-lg-4 p-2 review-box"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="card">
                                 <div class="card-body">
                                     <div class="mb-2 d-flex">
@@ -348,7 +396,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 p-2 review-box">
+                        <div
+                            class="col-12 col-md-6 col-lg-4 p-2 review-box"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="card">
                                 <div class="card-body">
                                     <div class="mb-2 d-flex">
@@ -393,7 +445,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 p-2 review-box">
+                        <div
+                            class="col-12 col-md-6 col-lg-4 p-2 review-box"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="card">
                                 <div class="card-body">
                                     <div class="mb-2 d-flex">
@@ -438,7 +494,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 p-2 review-box">
+                        <div
+                            class="col-12 col-md-6 col-lg-4 p-2 review-box"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="card">
                                 <div class="card-body">
                                     <div class="mb-2 d-flex">
@@ -483,7 +543,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 p-2 review-box">
+                        <div
+                            class="col-12 col-md-6 col-lg-4 p-2 review-box"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="card">
                                 <div class="card-body">
                                     <div class="mb-2 d-flex">
@@ -528,7 +592,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 p-2 review-box">
+                        <div
+                            class="col-12 col-md-6 col-lg-4 p-2 review-box"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <a href="" class="card">
                                 <div class="card-body">
                                     <div class="mb-2 d-flex">
@@ -578,10 +646,10 @@
             </section>
             <section class="mt-5 mb-5 my-5">
                 <div class="container">
-                    <div class="text-center title mb-4">
+                    <div class="text-center title mb-4" data-aos="fade-up">
                         <h2>Quán mới tham gia</h2>
                     </div>
-                    <div class="slide-store">
+                    <div class="slide-store" data-aos="fade-up">
                         <button class="left-button">
                             <i class="fas fa-chevron-left"></i>
                         </button>
@@ -1223,11 +1291,15 @@
             </section>
             <section class="areas mb-5">
                 <div class="container">
-                    <div class="text-center title mb-4">
+                    <div class="text-center title mb-4" data-aos="fade-up">
                         <h2>Khu vực</h2>
                     </div>
                     <div class="row">
-                        <div class="d-none d-md-block col-md-4 col-lg-3">
+                        <div
+                            class="d-none d-md-block col-md-4 col-lg-3"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
                             <div class="list-group">
                                 <a href="" class="list-group-item" id="all"
                                     >Tất cả</a
@@ -1240,7 +1312,11 @@
                                 >
                             </div>
                         </div>
-                        <div class="col-12 col-md-8 col-lg-9">
+                        <div
+                            class="col-12 col-md-8 col-lg-9"
+                            data-aos="fade-left"
+                            data-aos-duration="1000"
+                        >
                             <div class="row">
                                 <div class="swiper-slide col-6 col-lg-3 p-2">
                                     <a href="#">
@@ -2071,5 +2147,9 @@
         ></script>
         <script type="text/javascript" src="./assets/js/main.js"></script>
         <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

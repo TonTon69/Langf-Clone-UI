@@ -215,6 +215,9 @@ h5 {
     color: #fff;
     border: none;
 }
+.header .search .container .input-group input:focus {
+    box-shadow: 0 0 0 0 rgb(0 123 255 / 25%);
+}
 .header .search .container .input-group input::placeholder {
     color: #fff;
 }
@@ -547,4 +550,13 @@ footer a,
 footer a:hover {
     color: #e53935;
     font-weight: 700;
+}
+.animate-box {
+    opacity: 0;
+}
+.animate__flash {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
