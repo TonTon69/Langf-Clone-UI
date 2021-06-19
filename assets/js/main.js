@@ -13,6 +13,9 @@ $(document).ready(function () {
             $(".back-to-top").removeClass("show");
         }
     });
+    $(".back-to-top").click(function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
     //slider
     var swiper = new Swiper(".swiper-container", {
         slidesPerView: 5,
