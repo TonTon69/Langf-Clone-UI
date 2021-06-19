@@ -6,6 +6,12 @@ $(document).ready(function () {
         } else {
             $(".header .navbar").removeClass("sticky");
         }
+
+        if (this.scrollY > 500) {
+            $(".back-to-top").addClass("show");
+        } else {
+            $(".back-to-top").removeClass("show");
+        }
     });
     //slider
     var swiper = new Swiper(".swiper-container", {
