@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
     // back to top
     $(".back-to-top").click(function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        $("html, body").animate({ scrollTop: 0 }, "slow");
     });
     // active link
     $(".areas .list-group .list-group-item").click(function (e) {

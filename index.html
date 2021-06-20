@@ -26,6 +26,7 @@
         />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <div class="app">
@@ -41,7 +42,7 @@
                                 />
                             </a>
                         </div>
-                        <nav>
+                        <nav class="nav-pc">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="/">trang chủ</a>
@@ -57,11 +58,53 @@
                             </ul>
                         </nav>
                         <div class="gap"></div>
-                        <div class="icon-wrap">
+                        <div class="icon-wrap pc">
                             <a href="login.html">
                                 <img src="./assets/img/login.png" width="25" />
                             </a>
                         </div>
+                        <!-- mobile -->
+                        <label for="nav-mobile-input" class="nav-bars-btn">
+                            <img src="./assets/img/menu.svg" width="25" />
+                        </label>
+                        <input
+                            type="checkbox"
+                            hidden
+                            class="nav-mobile-input"
+                            id="nav-mobile-input"
+                        />
+                        <label
+                            for="nav-mobile-input"
+                            class="nav-overlay"
+                        ></label>
+                        <nav class="nav-mobile">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >ăn chơi sinh viên</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html"
+                                        ><img
+                                            src="./assets/img/login.png"
+                                            width="25"
+                                    /></a>
+                                </li>
+                            </ul>
+                            <label
+                                for="nav-mobile-input"
+                                class="nav-mobile-close"
+                            >
+                                <img src="./assets/img/cancel.svg" width="20" />
+                            </label>
+                        </nav>
                     </div>
                 </div>
                 <div class="banner">
@@ -3365,7 +3408,8 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"
         ></script>
-        <script type="text/javascript" src="./assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
     </body>
 </html>
