@@ -146,46 +146,36 @@ h5 {
 }
 @keyframes randomTransformAnimateLeft {
     0% {
-        left: 0px;
-        top: 0px;
+        transform: translate(0);
     }
     25% {
-        left: 10px;
-        top: 0px;
+        transform: translateY(10px);
     }
     50% {
-        left: 10px;
-        top: 10px;
+        transform: translate(-20px, 20px);
     }
     75% {
-        left: 0px;
-        top: 10px;
+        transform: translate(-10px);
     }
     100% {
-        left: 0px;
-        top: 0px;
+        transform: translate(0);
     }
 }
 @keyframes randomTransformAnimateRight {
     0% {
-        right: 0px;
-        top: 0px;
+        transform: translate(0);
     }
     25% {
-        right: 10px;
-        top: 0px;
+        transform: translateY(10px);
     }
     50% {
-        right: 10px;
-        top: 10px;
+        transform: translate(20px, 20px);
     }
     75% {
-        right: 0px;
-        top: 10px;
+        transform: translate(10px);
     }
     100% {
-        right: 0px;
-        top: 0px;
+        transform: translate(0);
     }
 }
 .header .search .left {

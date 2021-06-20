@@ -1,22 +1,28 @@
 $(document).ready(function () {
-    // scroll navbar
     $(window).scroll(function () {
+        // scroll navbar
         if (this.scrollY > 20) {
             $(".header .navbar").addClass("sticky");
         } else {
             $(".header .navbar").removeClass("sticky");
         }
-
+        // scroll show button back to top
         if (this.scrollY > 500) {
             $(".back-to-top").addClass("show");
         } else {
             $(".back-to-top").removeClass("show");
         }
     });
+    // back to top
     $(".back-to-top").click(function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
-    //slider
+    // active link
+    $(".areas .list-group .list-group-item").click(function (e) {
+        e.preventDefault();
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    // slider
     var swiper = new Swiper(".swiper-container", {
         slidesPerView: 5,
         spaceBetween: 0,
@@ -28,12 +34,4 @@ $(document).ready(function () {
             prevEl: ".left-button",
         },
     });
-    //active link
-    const urlParams = new URLSearchParams(window.location.search);
-    const myParam = urlParams.get("area_id");
-    if (myParam === null) {
-        document.getElementById("all").classList.add("active");
-    } else {
-        document.getElementById(myParam).classList.add("active");
-    }
 });
