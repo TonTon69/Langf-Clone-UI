@@ -14,7 +14,7 @@
     <body>
         <div class="container" id="container">
             <div class="form-container sign-up-container">
-                <form action="#">
+                <form action="#" onsubmit="return validate()">
                     <h1>Tạo tài khoản</h1>
                     <div class="social-container">
                         <a href="#" class="social"
@@ -25,10 +25,25 @@
                         ></a>
                     </div>
                     <span>hoặc sử dụng email của bạn để đăng ký</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
-                    <input type="password" placeholder="Nhập lại mật khẩu" />
-                    <button class="sign-up">Đăng ký</button>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Mật khẩu"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="re_password"
+                        placeholder="Nhập lại mật khẩu"
+                        required
+                    />
+                    <button type="submit" class="sign-up">Đăng ký</button>
                 </form>
             </div>
             <div class="form-container sign-in-container">
@@ -43,8 +58,8 @@
                         ></a>
                     </div>
                     <span>hoặc sử dụng tài khoản của bạn</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Mật khẩu" required />
                     <a href="#" class="forgot-password">Quên mật khẩu?</a>
                     <button>Đăng nhập</button>
                 </form>
@@ -84,5 +99,20 @@
         signInButton.addEventListener("click", () => {
             container.classList.remove("right-panel-active");
         });
+
+        function validate() {
+            var password = document.getElementById("password").value;
+            var spassword = document.getElementById("re_password").value;
+            if (password.length < 6) {
+                alert("Mật khẩu phải ít nhất 6 ký tự");
+                return false;
+            }
+            if (password === spassword) {
+                return true;
+            } else {
+                alert("Mật khẩu nhập lại không trùng khớp!");
+                return false;
+            }
+        }
     </script>
 </html>
