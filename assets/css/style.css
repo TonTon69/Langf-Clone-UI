@@ -70,6 +70,9 @@ h5 {
     -webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
 }
+.header .icon-wrap a:hover {
+    color: transparent !important;
+}
 .header .nav-pc {
     flex: 1;
     text-align: right;
@@ -630,4 +633,28 @@ footer a:hover {
     opacity: 1;
     pointer-events: auto;
     bottom: 40px;
+}
+
+.profile {
+    min-height: 80vh;
+    padding-top: 160px;
+}
+.profile .rounded-pill {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
+}
+.profile .btn-edit {
+    color: #fff;
+    background-color: #aa0b0b;
+    border-color: #aa0b0b;
+}
+.profile .btn-edit:focus,
+.profile .btn-edit:active {
+    color: #fff !important;
+    background-color: #7a0808 !important;
+    border-color: #6e0707 !important;
+    box-shadow: 0 0 0 0.2rem rgb(183 48 48 / 50%) !important;
 }
