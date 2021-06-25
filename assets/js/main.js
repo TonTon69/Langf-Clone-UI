@@ -24,6 +24,7 @@ $(document).ready(function () {
     });
     // slider
     var swiper = new Swiper(".swiper-container", {
+        loop: true,
         slidesPerView: 5,
         spaceBetween: 0,
         autoplay: {

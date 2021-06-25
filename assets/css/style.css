@@ -664,3 +664,83 @@ footer a:hover {
     border-color: #6e0707 !important;
     box-shadow: 0 0 0 0.2rem rgb(183 48 48 / 50%) !important;
 }
+
+/* store */
+.store .banner {
+    min-width: 300px;
+    height: 300px;
+    margin-bottom: 0;
+}
+.store .banner .overlay {
+    background-image: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 11, 11, 0.3);
+    filter: unset;
+    -webkit-filter: unset;
+}
+.store .logo-col {
+    padding: 0 40px;
+}
+.store .logo-col .logo-wrapper {
+    width: 218px;
+    height: 218px;
+    margin-top: -60%;
+    border-radius: 10px;
+    box-shadow: 0 0.3em 0.5em rgb(0 0 0 / 20%);
+    position: relative;
+    background-color: #fff;
+}
+.store .logo-col .logo-wrapper .bg {
+    border-radius: 5px;
+    margin: 4%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(".././img/cover.jpg"),
+        url(".././img/default-cover.png");
+}
+.store .title-col .title {
+    margin: 0;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #aa0b0b;
+    font-weight: 900;
+    font-size: 27px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.store .title-col .area {
+    background-color: #388e3c;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0 0.7em;
+    line-height: 1.5em;
+    border-radius: 1em;
+}
+.store .other-col {
+    padding: 1em;
+}
+.store .other-col a {
+    color: inherit;
+    text-decoration: none;
+}
+.store .other-col a i {
+    color: #aa0b0b;
+    font-size: 24px;
+}
+.store .other-col a span {
+    font-size: 16px;
+    text-align: justify;
+    transform: translateY(-5px);
+    display: block;
+}
