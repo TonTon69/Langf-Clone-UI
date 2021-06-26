@@ -46,6 +46,18 @@ h5 {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(170 11 11 / 25%);
 }
+.btn.btn-primary {
+    color: #fff;
+    background-color: #aa0b0b;
+    border-color: #aa0b0b;
+}
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+    color: #fff !important;
+    background-color: #7a0808 !important;
+    border-color: #6e0707 !important;
+    box-shadow: 0 0 0 0.2rem rgb(183 48 48 / 50%) !important;
+}
 
 .header .navbar {
     display: flex;
@@ -330,7 +342,7 @@ h5 {
     height: 3em;
     overflow: hidden;
 }
-.news .text-right .see-more {
+.news .text-right .btn.btn-primary {
     background-color: #800100;
     padding: 0.8em 1em 0.5em;
     margin: -1em 1em 0;
@@ -643,26 +655,6 @@ footer a:hover {
     border-radius: 50%;
     background-color: rgb(224, 224, 224);
     padding: 10px;
-}
-.profile .btn-edit,
-.btn-see-more,
-.btn-save {
-    color: #fff;
-    background-color: #aa0b0b;
-    border-color: #aa0b0b;
-}
-.profile .btn-edit:focus,
-.profile .btn-edit:active,
-.btn-see-more:hover,
-.btn-see-more:focus,
-.btn-see-more:active,
-.btn-save:focus,
-.btn-save:active,
-.btn-save:hover {
-    color: #fff !important;
-    background-color: #7a0808 !important;
-    border-color: #6e0707 !important;
-    box-shadow: 0 0 0 0.2rem rgb(183 48 48 / 50%) !important;
 }
 
 /* store */
