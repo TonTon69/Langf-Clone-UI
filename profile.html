@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cẩm nang Làng Đại Học</title>
+        <link rel="icon" href="./assets/img/logo.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cẩm nang Làng Đại Học</title>
-    <link rel="icon" href="./assets/img/logo.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-</head>
-
-<body>
-    <div class="app">
-        <div class="header">
-            <div class="navbar" style="background-color: #aa0b0b">
-                <div class="container">
-                    <div class="logo">
-                        <a href="/">
-                            <img src="./assets/img/logo.png" alt="logo" height="40" />
-                        </a>
-                    </div>
-                    <nav class="nav-pc">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">trang chủ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">tin tức</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ăn chơi sinh viên</a
+    <body>
+        <div class="app">
+            <div class="header">
+                <div class="navbar" style="background-color: #aa0b0b">
+                    <div class="container">
+                        <div class="logo">
+                            <a href="/">
+                                <img
+                                    src="./assets/img/logo.png"
+                                    alt="logo"
+                                    height="40"
+                                />
+                            </a>
+                        </div>
+                        <nav class="nav-pc">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >ăn chơi sinh viên</a
                                     >
                                 </li>
                             </ul>
@@ -45,26 +62,35 @@
                             <a href="profile.html" class="mr-3">
                                 <img src="./assets/img/user.svg" width="25" />
                             </a>
-                                <a href="logout.html">
-                                    <img src="./assets/img/logout.png" width="25" />
-                                </a>
-                </div>
-                <!-- mobile -->
-                <label for="nav-mobile-input" class="nav-bars-btn">
+                            <a href="logout.html">
+                                <img src="./assets/img/logout.png" width="25" />
+                            </a>
+                        </div>
+                        <!-- mobile -->
+                        <label for="nav-mobile-input" class="nav-bars-btn">
                             <img src="./assets/img/menu.svg" width="25" />
                         </label>
-                <input type="checkbox" hidden class="nav-mobile-input" id="nav-mobile-input" />
-                <label for="nav-mobile-input" class="nav-overlay"></label>
-                <nav class="nav-mobile">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">tin tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ăn chơi sinh viên</a
+                        <input
+                            type="checkbox"
+                            hidden
+                            class="nav-mobile-input"
+                            id="nav-mobile-input"
+                        />
+                        <label
+                            for="nav-mobile-input"
+                            class="nav-overlay"
+                        ></label>
+                        <nav class="nav-mobile">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >ăn chơi sinh viên</a
                                     >
                                 </li>
                             </ul>
@@ -135,48 +161,70 @@
                             <p><a href="">Cơm hàng quán</a></p>
                             <p><a href="">Cơm mẹ người ta nấu</a></p>
                             <p><a href="">Tin tức</a></p>
-            </div>
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase font-weight-bold">
-                    liên kết
-                </h6>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-color: #fff" />
-                <p><a href="">Facebook</a></p>
-            </div>
-            <div class="
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase font-weight-bold">
+                                liên kết
+                            </h6>
+                            <hr
+                                class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; border-color: #fff"
+                            />
+                            <p><a href="">Facebook</a></p>
+                        </div>
+                        <div
+                            class="
                                 col-md-4 col-lg-3 col-xl-3
                                 mx-auto
                                 mb-md-0 mb-4
-                            ">
-                <h6 class="text-uppercase font-weight-bold">
-                    liên hệ
-                </h6>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; border-color: #fff" />
-                <p>
-                    <i class="fa fa-home mr-2"></i> Phòng I.007, Khu Công nghệ Phần mềm, Linh Trung, Thủ Đức
-                </p>
-                <p>
-                    <i class="fa fa-home mr-2"></i> Ký túc xá khu B ĐHQG TPHCM, Đông Hòa Dĩ An, Bình Dương
-                </p>
-                <p>
-                    <i class="fa fa-envelope mr-2"></i> hoanghuynh0609@gmail.com
-                </p>
+                            "
+                        >
+                            <h6 class="text-uppercase font-weight-bold">
+                                liên hệ
+                            </h6>
+                            <hr
+                                class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; border-color: #fff"
+                            />
+                            <p>
+                                <i class="fa fa-home mr-2"></i> Phòng I.007, Khu
+                                Công nghệ Phần mềm, Linh Trung, Thủ Đức
+                            </p>
+                            <p>
+                                <i class="fa fa-home mr-2"></i> Ký túc xá khu B
+                                ĐHQG TPHCM, Đông Hòa Dĩ An, Bình Dương
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope mr-2"></i>
+                                hoanghuynh0609@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-copyright text-center pb-3">
+                        COPYRIGHT © 2021 - TON TON
+                    </div>
+                </div>
+            </footer>
+            <div class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
             </div>
         </div>
-        <div class="footer-copyright text-center pb-3">
-            COPYRIGHT © 2021 - TON TON
-        </div>
-    </div>
-    </footer>
-    <div class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-</body>
-
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
+    </body>
 </html>

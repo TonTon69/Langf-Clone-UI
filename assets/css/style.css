@@ -303,7 +303,6 @@ h5 {
     animation: fadeIn linear 0.3s;
 }
 
-
 /* nav mobile */
 
 .nav-mobile {
@@ -337,11 +336,11 @@ h5 {
     right: 15px;
 }
 
-.nav-mobile-input:checked~.nav-overlay {
+.nav-mobile-input:checked ~ .nav-overlay {
     display: block;
 }
 
-.nav-mobile-input:checked~.nav-mobile {
+.nav-mobile-input:checked ~ .nav-mobile {
     opacity: 1;
     transform: translateX(0);
 }
@@ -554,7 +553,11 @@ h5 {
 
 .swiper-slide .slider-box .logo .mask {
     width: 100%;
-    background-image: linear-gradient( 90deg, transparent 70%, rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(
+        90deg,
+        transparent 70%,
+        rgba(0, 0, 0, 0.8)
+    );
     height: 100%;
     position: absolute;
     top: 0;
@@ -726,7 +729,8 @@ footer a:hover {
     bottom: 40px;
 }
 
-.profile {
+.profile,
+.login {
     min-height: 80vh;
     padding-top: 160px;
 }
@@ -739,7 +743,12 @@ footer a:hover {
     padding: 10px;
 }
 
-
+.login .nav-item.nav-link {
+    color: #aa0b0b;
+}
+.login .nav-item.nav-link.active {
+    color: #495057 !important;
+}
 /* store */
 
 .store .banner {
@@ -784,7 +793,8 @@ footer a:hover {
     left: 0;
     background-size: cover;
     background-position: 50%;
-    background-image: url(".././img/cover.jpg"), url(".././img/default-cover.png");
+    background-image: url(".././img/cover.jpg"),
+        url(".././img/default-cover.png");
 }
 
 .store .title-col .title {
@@ -853,7 +863,6 @@ footer a:hover {
     background-color: #aa0b0b;
     transform: rotate(45deg);
 }
-
 
 /* tabs */
 

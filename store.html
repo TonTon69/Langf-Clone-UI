@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cẩm nang Làng Đại Học</title>
+        <link rel="icon" href="./assets/img/logo.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cẩm nang Làng Đại Học</title>
-    <link rel="icon" href="./assets/img/logo.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-</head>
-
-<body>
-    <div class="app store">
-        <div class="header">
-            <div class="navbar">
-                <div class="container">
-                    <div class="logo">
-                        <a href="/">
-                            <img src="./assets/img/logo.png" alt="logo" height="40" />
-                        </a>
-                    </div>
-                    <nav class="nav-pc">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">trang chủ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">tin tức</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ăn chơi sinh viên</a
+    <body>
+        <div class="app store">
+            <div class="header">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="logo">
+                            <a href="/">
+                                <img
+                                    src="./assets/img/logo.png"
+                                    alt="logo"
+                                    height="40"
+                                />
+                            </a>
+                        </div>
+                        <nav class="nav-pc">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >ăn chơi sinh viên</a
                                     >
                                 </li>
                             </ul>
@@ -45,23 +62,32 @@
                             <a href="login.html">
                                 <img src="./assets/img/login.png" width="25" />
                             </a>
-                </div>
-                <!-- mobile -->
-                <label for="nav-mobile-input" class="nav-bars-btn">
+                        </div>
+                        <!-- mobile -->
+                        <label for="nav-mobile-input" class="nav-bars-btn">
                             <img src="./assets/img/menu.svg" width="25" />
                         </label>
-                <input type="checkbox" hidden class="nav-mobile-input" id="nav-mobile-input" />
-                <label for="nav-mobile-input" class="nav-overlay"></label>
-                <nav class="nav-mobile">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">tin tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ăn chơi sinh viên</a
+                        <input
+                            type="checkbox"
+                            hidden
+                            class="nav-mobile-input"
+                            id="nav-mobile-input"
+                        />
+                        <label
+                            for="nav-mobile-input"
+                            class="nav-overlay"
+                        ></label>
+                        <nav class="nav-mobile">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >ăn chơi sinh viên</a
                                     >
                                 </li>
                                 <li class="nav-item">
@@ -70,40 +96,47 @@
                                             src="./assets/img/login.png"
                                             width="25"
                                     /></a>
-                        </li>
-                    </ul>
-                    <label for="nav-mobile-input" class="nav-mobile-close">
+                                </li>
+                            </ul>
+                            <label
+                                for="nav-mobile-input"
+                                class="nav-mobile-close"
+                            >
                                 <img src="./assets/img/cancel.svg" width="20" />
                             </label>
-                </nav>
-            </div>
-        </div>
-        <div class="banner">
-            <div class="bg" style="
-                            background-image: url('./assets/img/cover.jpg'),
-                                url('./assets/img/default-cover.png');
-                        "></div>
-            <div class="overlay"></div>
-        </div>
-    </div>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="logo-col col-md-6 col-lg-3 col-12">
-                    <div class="logo-wrapper">
-                        <div class="bg"></div>
+                        </nav>
                     </div>
                 </div>
-                <div class="title-col col-md-6 col-lg-5 col-12">
-                    <h1 class="title">
-                        Ba Ga aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    </h1>
-                    <div class="area">Khu vuc khac</div>
+                <div class="banner">
+                    <div
+                        class="bg"
+                        style="
+                            background-image: url('./assets/img/cover.jpg'),
+                                url('./assets/img/default-cover.png');
+                        "
+                    ></div>
+                    <div class="overlay"></div>
                 </div>
-                <div class="other-col col-lg-4 col-12">
-                    <a href="" class="d-flex">
-                        <i class="fas fa-map-signs mr-2"></i>
-                        <span>Đối diện nhà văn hóa Sinh viên, khu ẩm thực
+            </div>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="logo-col col-md-6 col-lg-3 col-12">
+                            <div class="logo-wrapper">
+                                <div class="bg"></div>
+                            </div>
+                        </div>
+                        <div class="title-col col-md-6 col-lg-5 col-12">
+                            <h1 class="title">
+                                Ba Ga aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            </h1>
+                            <div class="area">Khu vuc khac</div>
+                        </div>
+                        <div class="other-col col-lg-4 col-12">
+                            <a href="" class="d-flex">
+                                <i class="fas fa-map-signs mr-2"></i>
+                                <span
+                                    >Đối diện nhà văn hóa Sinh viên, khu ẩm thực
                                     chợ Quê</span
                                 >
                             </a>
@@ -333,59 +366,107 @@
                                                         "
                                                     >
                                                         <span>5</span>
-                </div>
-            </div>
-            <div class="content">
-                <div class="
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <div
+                                                        class="
                                                             mb-2
                                                             text-justify
-                                                        ">
-                    Bún đậu Văn theo mình đánh giá là chỗ bán bún đậu ngon nhất làng. 1 phần combo 2 người ăn bao no, trà vải cũng ngon nữa, tốc độ làm đồ ăn nhanh nhưng không nhanh bằng tốc độ uống trà vải của mình nên mình uống hết nước trước khi đem ra rồi🤪🤪 Sau khi
-                    ăn xong còn được tặng kẹo ăn cho thơm miệng nữa :")
-                </div>
-                <div class="mb-2" style="font-size: 0.8em">
-                    <i>Đánh giá bởi
+                                                        "
+                                                    >
+                                                        Bún đậu Văn theo mình
+                                                        đánh giá là chỗ bán bún
+                                                        đậu ngon nhất làng. 1
+                                                        phần combo 2 người ăn
+                                                        bao no, trà vải cũng
+                                                        ngon nữa, tốc độ làm đồ
+                                                        ăn nhanh nhưng không
+                                                        nhanh bằng tốc độ uống
+                                                        trà vải của mình nên
+                                                        mình uống hết nước trước
+                                                        khi đem ra rồi🤪🤪 Sau
+                                                        khi ăn xong còn được
+                                                        tặng kẹo ăn cho thơm
+                                                        miệng nữa :")
+                                                    </div>
+                                                    <div
+                                                        class="mb-2"
+                                                        style="font-size: 0.8em"
+                                                    >
+                                                        <i
+                                                            >Đánh giá bởi
                                                             <span
                                                                 class="d-inline"
                                                                 >tonton</span
                                                             >
                                                         </i>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="tool text-center my-3" data-toggle="modal" data-target="#reviewModal">
-            <button class="
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="tool text-center my-3"
+                                            data-toggle="modal"
+                                            data-target="#reviewModal"
+                                        >
+                                            <button
+                                                class="
                                                     btn btn-primary
                                                     mr-auto
                                                     ml-auto
-                                                ">
+                                                "
+                                            >
                                                 REVIEW NGAY
                                             </button>
-        </div>
-        <!-- Modal requried login -->
-        <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="reviewModalLabel">
-                            Review mới
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        </div>
+                                        <!-- Modal requried login -->
+                                        <div
+                                            class="modal fade"
+                                            id="reviewModal"
+                                            tabindex="-1"
+                                            role="dialog"
+                                            aria-labelledby="reviewModalLabel"
+                                            aria-hidden="true"
+                                        >
+                                            <div
+                                                class="modal-dialog"
+                                                role="document"
+                                            >
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5
+                                                            class="modal-title"
+                                                            id="reviewModalLabel"
+                                                        >
+                                                            Review mới
+                                                        </h5>
+                                                        <button
+                                                            type="button"
+                                                            class="close"
+                                                            data-dismiss="modal"
+                                                            aria-label="Close"
+                                                        >
                                                             <span
                                                                 aria-hidden="true"
                                                                 >&times;</span
                                                             >
                                                         </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="
                                                                 alert alert-info
-                                                            " role="alert">
-                            Bạn chưa đăng nhập! Vui lòng đăng nhập để review.
-                        </div>
-                        <div class="form-group">
-                            <label for="review">Đánh giá</label
+                                                            "
+                                                            role="alert"
+                                                        >
+                                                            Bạn chưa đăng nhập!
+                                                            Vui lòng đăng nhập
+                                                            để review.
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="review"
+                                                                >Đánh giá</label
                                                             >
                                                             <input
                                                                 class="
