@@ -17,7 +17,15 @@ body {
     color: #000000;
     background-color: #fff;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #9b0f0f;
+    font-weight: 600;
+}
 a,
 a:hover {
     text-decoration: none;
@@ -27,7 +35,9 @@ a:hover {
 .dark {
     color: #f1f1f1;
 }
-
+.is-larger {
+    font-size: 1.3em;
+}
 .is-full-height {
     min-height: 550px;
     height: 80vh;
@@ -131,18 +141,21 @@ a:hover {
     object-fit: cover;
 }
 
-.service .is-underline {
+.service .is-underline,
+.section-content .quote .is-underline {
     position: relative;
     color: #9b0f0f;
     text-transform: uppercase;
-    font-size: 0.97em;
     letter-spacing: 0.03em;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
 }
-
-.service .is-underline::after {
+.service .is-underline {
+    font-size: 0.97em;
+}
+.service .is-underline::after,
+.section-content .quote .is-underline::before {
     position: absolute;
     content: "";
     width: 0;
@@ -151,13 +164,16 @@ a:hover {
     bottom: -10px;
     transition: all 0.4s ease-in-out;
 }
-
-.service .link:hover .is-underline::after {
+.service .link,
+.section-content .quote {
+    display: inline-block;
+}
+.service .link:hover .is-underline::after,
+.section-content .quote:hover .is-underline::before {
     left: 0;
     width: 100%;
     background-color: #9b0f0f;
 }
-
 
 /* service-price */
 
