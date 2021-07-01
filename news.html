@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Tin tức</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/css/styleNews.css" />
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=3495163843919139&autoLogAppEvents=1"
+            nonce="UtVBddsi"
+        ></script>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header-wrapper">
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="header-top-left">
+                                <ul style="padding-left: 0px">
+                                    <!--các thuộc tính trong này có ảnh hướng đến chữ-->
+                                    <li>
+                                        <strong style="color: #eadada"
+                                            >chào mừng bạn đến với cẩm
+                                            nang</strong
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-top-right">
+                                <div class="social-icons">
+                                    <span
+                                        ><a href="#"
+                                            ><i
+                                                class="fab fa-facebook"
+                                                style="color: #eadada"
+                                            ></i></a
+                                    ></span>
+                                    <span
+                                        ><a href="#"
+                                            ><i
+                                                class="far fa-envelope"
+                                                style="color: #eadada"
+                                            ></i></a
+                                    ></span>
+                                    <span
+                                        ><a href="#"
+                                            ><i
+                                                class="fas fa-phone-alt"
+                                                style="color: #eadada"
+                                            ></i></a
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-2">
+                                    <div class="logo">
+                                        <a href="#"
+                                            ><img
+                                                style="
+                                                    width: 80px;
+                                                    height: 80px;
+                                                "
+                                                src="./assets/img/langf.png"
+                                                alt=""
+                                        /></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-10 menu">
+                                    <ul class="menu">
+                                        <li><a href="#">GIỚI THIỆU</a></li>
+                                        <li><a href="#">KHUYẾN MÃI</a></li>
+                                        <li>
+                                            <a href="#"
+                                                >TIN TỨC
+                                                <i
+                                                    class="fas fa-chevron-down"
+                                                ></i
+                                            ></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">THỜI SỰ</a></li>
+                                                <li>
+                                                    <a href="#">CÔNG NGHỆ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">CHUYỆN LÀNG</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >CẨM NANG SINH VIÊN
+                                                <i
+                                                    class="fas fa-chevron-down"
+                                                ></i
+                                            ></a>
+                                            <ul
+                                                class="sub-menu"
+                                                style="width: 150px"
+                                            >
+                                                <li>
+                                                    <a href="#">GAME THỦ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        >CHĂM SÓC SẮC ĐẸP</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#">NGOẠI NGỮ</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >LÀNG REVIEW
+                                                <i
+                                                    class="fas fa-chevron-down"
+                                                ></i
+                                            ></a>
+                                            <ul
+                                                class="sub-menu"
+                                                style="width: 120px"
+                                            >
+                                                <li>
+                                                    <a href="#"
+                                                        >QUÁN ĂN- UỐNG</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#">LƯỢM LẶT</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        >MUA BÁN UY TÍN</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#">BỐC PHỐT</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">REVIEW KHÁC</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >TUYỂN DỤNG
+                                                <i
+                                                    class="fas fa-chevron-down"
+                                                ></i
+                                            ></a>
+                                            <ul
+                                                class="sub-menu"
+                                                style="width: 150px"
+                                            >
+                                                <li>
+                                                    <a href="#"
+                                                        >VIỆC LÀM BÁN THỜI
+                                                        GIAN</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        >VIỆC LÀM TOÀN THỜI
+                                                        GIAN</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="#"
+                                                >TÌM KIẾM
+                                                <i class="fas fa-search"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--*************************content***************************-->
+            <section class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-9">
+                            <div class="content">
+                                <div
+                                    id="carouselExampleIndicators"
+                                    class="carousel slide"
+                                    data-ride="carousel"
+                                    data-interval="3000"
+                                >
+                                    <ol class="carousel-indicators">
+                                        <li
+                                            data-target="#carouselExampleIndicators"
+                                            data-slide-to="0"
+                                            class="active"
+                                        ></li>
+                                        <li
+                                            data-target="#carouselExampleIndicators"
+                                            data-slide-to="1"
+                                        ></li>
+                                        <li
+                                            data-target="#carouselExampleIndicators"
+                                            data-slide-to="2"
+                                        ></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a href="#">
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/05/125845672_1147314469017066_7075519518531914996_n.jpg"
+                                                    alt="First slide"
+                                                />
+                                                <div
+                                                    class="
+                                                        carousel-caption
+                                                        d-none d-md-block
+                                                    "
+                                                >
+                                                    <span class="cat-label"
+                                                        >CẨM NANG SINH VIÊN,
+                                                        NGOẠI NGỮ, ƯU ĐÃI SINH
+                                                        VIÊN
+                                                    </span>
+                                                    <h5 class="post-title">
+                                                        Anh ngữ Zim Thủ Đức tặng
+                                                        10 suất học bổng IELTS
+                                                        dành cho sinh viên Làng
+                                                        đại học
+                                                    </h5>
+                                                    <p
+                                                        class="
+                                                            from_the_blog_excerpt
+                                                        "
+                                                    >
+                                                        Trung tâm Anh ngữ ZIM là
+                                                        một trường Anh ngữ học
+                                                        thuật quy mô và chất
+                                                        lượng. Thành lập từ cuối
+                                                        2015, ZIM đã xây dựng và
+                                                        liên tục phát triển hệ
+                                                        thống đào tạo Tiếng Anh
+                                                        hỗ trợ hàng nghìn học
+                                                        viên thành công trong
+                                                        việc học, sử dụng Tiếng
+                                                        Anh ở môi trường quốc
+                                                        tế.
+                                                    </p>
+                                                    <a
+                                                        href="#"
+                                                        class="
+                                                            btn
+                                                            btn-outline-light
+                                                        "
+                                                    >
+                                                        Continue reading
+                                                        <span class="meta-nav"
+                                                            >→</span
+                                                        >
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="#">
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/05/125845672_1147314469017066_7075519518531914996_n.jpg"
+                                                    alt="First slide"
+                                                />
+                                                <div
+                                                    class="
+                                                        carousel-caption
+                                                        d-none d-md-block
+                                                    "
+                                                >
+                                                    <span class="cat-label"
+                                                        >CẨM NANG SINH VIÊN,
+                                                        NGOẠI NGỮ, ƯU ĐÃI SINH
+                                                        VIÊN
+                                                    </span>
+                                                    <h5 class="post-title">
+                                                        Anh ngữ Zim Thủ Đức tặng
+                                                        10 suất học bổng IELTS
+                                                        dành cho sinh viên Làng
+                                                        đại học
+                                                    </h5>
+                                                    <p
+                                                        class="
+                                                            from_the_blog_excerpt
+                                                        "
+                                                    >
+                                                        Trung tâm Anh ngữ ZIM là
+                                                        một trường Anh ngữ học
+                                                        thuật quy mô và chất
+                                                        lượng. Thành lập từ cuối
+                                                        2015, ZIM đã xây dựng và
+                                                        liên tục phát triển hệ
+                                                        thống đào tạo Tiếng Anh
+                                                        hỗ trợ hàng nghìn học
+                                                        viên thành công trong
+                                                        việc học, sử dụng Tiếng
+                                                        Anh ở môi trường quốc
+                                                        tế.
+                                                    </p>
+                                                    <a
+                                                        href="#"
+                                                        class="
+                                                            btn
+                                                            btn-outline-light
+                                                        "
+                                                    >
+                                                        Continue reading
+                                                        <span class="meta-nav"
+                                                            >→</span
+                                                        >
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="#">
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/05/125845672_1147314469017066_7075519518531914996_n.jpg"
+                                                    alt="First slide"
+                                                />
+                                                <div
+                                                    class="
+                                                        carousel-caption
+                                                        d-none d-md-block
+                                                    "
+                                                >
+                                                    <span class="cat-label"
+                                                        >CẨM NANG SINH VIÊN,
+                                                        NGOẠI NGỮ, ƯU ĐÃI SINH
+                                                        VIÊN
+                                                    </span>
+                                                    <h5 class="post-title">
+                                                        Anh ngữ Zim Thủ Đức tặng
+                                                        10 suất học bổng IELTS
+                                                        dành cho sinh viên Làng
+                                                        đại học
+                                                    </h5>
+                                                    <p
+                                                        class="
+                                                            from_the_blog_excerpt
+                                                        "
+                                                    >
+                                                        Trung tâm Anh ngữ ZIM là
+                                                        một trường Anh ngữ học
+                                                        thuật quy mô và chất
+                                                        lượng. Thành lập từ cuối
+                                                        2015, ZIM đã xây dựng và
+                                                        liên tục phát triển hệ
+                                                        thống đào tạo Tiếng Anh
+                                                        hỗ trợ hàng nghìn học
+                                                        viên thành công trong
+                                                        việc học, sử dụng Tiếng
+                                                        Anh ở môi trường quốc
+                                                        tế.
+                                                    </p>
+                                                    <a
+                                                        href="#"
+                                                        class="
+                                                            btn
+                                                            btn-outline-light
+                                                        "
+                                                    >
+                                                        Continue reading
+                                                        <span class="meta-nav"
+                                                            >→</span
+                                                        >
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a
+                                        class="carousel-control-prev"
+                                        href="#carouselExampleIndicators"
+                                        role="button"
+                                        data-slide="prev"
+                                    >
+                                        <span
+                                            class="carousel-control-prev-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a
+                                        class="carousel-control-next"
+                                        href="#carouselExampleIndicators"
+                                        role="button"
+                                        data-slide="next"
+                                    >
+                                        <span
+                                            class="carousel-control-next-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="content-top mt-5">
+                                    <div class="row">
+                                        <div
+                                            class="col-xs-12 col-sm-12 col-md-4"
+                                        >
+                                            <a href="">
+                                                <div
+                                                    class="card mb-4"
+                                                    style="width: 16rem"
+                                                >
+                                                    <img
+                                                        height="145"
+                                                        class="card-img-top"
+                                                        src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/07/Anh-1-300x219.jpg"
+                                                    />
+                                                    <div
+                                                        class="
+                                                            card-body
+                                                            text-center
+                                                        "
+                                                    >
+                                                        <h5 class="card-title">
+                                                            Nam sinh Bách khoa 3
+                                                            lần đạt điểm TOEIC
+                                                            tuyệt đối
+                                                        </h5>
+                                                        <div
+                                                            class="is-divider"
+                                                        ></div>
+                                                        <p class="card-text">
+                                                            Vượt qua định kiến
+                                                            sinh viên kỹ thuật
+                                                            yếu ngoại ngữ, Ngô
+                                                            Tấn Hoàng Khoa,
+                                                            Trường ĐH Bách khoa
+                                                            TP.HCM đạt điểm
+                                                            tuyệt đối ở ba lần
+                                                            thi TOEIC, giành
+                                                            nhiều học bổng, xin
+                                                            việc làm với mức
+                                                            lương hậu hĩnh ở một
+                                                            hãng hàng không khi
+                                                            chưa tốt nghiệp.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="col-xs-12 col-sm-12 col-md-4"
+                                        >
+                                            <a href="">
+                                                <div
+                                                    class="card mb-4"
+                                                    style="width: 16rem"
+                                                >
+                                                    <img
+                                                        height="145"
+                                                        class="card-img-top"
+                                                        src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/07/Anh-1-300x219.jpg"
+                                                    />
+                                                    <div
+                                                        class="
+                                                            card-body
+                                                            text-center
+                                                        "
+                                                    >
+                                                        <h5 class="card-title">
+                                                            Nam sinh Bách khoa 3
+                                                            lần đạt điểm TOEIC
+                                                            tuyệt đối
+                                                        </h5>
+                                                        <div
+                                                            class="is-divider"
+                                                        ></div>
+                                                        <p class="card-text">
+                                                            Vượt qua định kiến
+                                                            sinh viên kỹ thuật
+                                                            yếu ngoại ngữ, Ngô
+                                                            Tấn Hoàng Khoa,
+                                                            Trường ĐH Bách khoa
+                                                            TP.HCM đạt điểm
+                                                            tuyệt đối ở ba lần
+                                                            thi TOEIC, giành
+                                                            nhiều học bổng, xin
+                                                            việc làm với mức
+                                                            lương hậu hĩnh ở một
+                                                            hãng hàng không khi
+                                                            chưa tốt nghiệp.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="col-xs-12 col-sm-12 col-md-4"
+                                        >
+                                            <a href="">
+                                                <div
+                                                    class="card mb-4"
+                                                    style="width: 16rem"
+                                                >
+                                                    <img
+                                                        height="145"
+                                                        class="card-img-top"
+                                                        src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/07/Anh-1-300x219.jpg"
+                                                    />
+                                                    <div
+                                                        class="
+                                                            card-body
+                                                            text-center
+                                                        "
+                                                    >
+                                                        <h5 class="card-title">
+                                                            Nam sinh Bách khoa 3
+                                                            lần đạt điểm TOEIC
+                                                            tuyệt đối
+                                                        </h5>
+                                                        <div
+                                                            class="is-divider"
+                                                        ></div>
+                                                        <p class="card-text">
+                                                            Vượt qua định kiến
+                                                            sinh viên kỹ thuật
+                                                            yếu ngoại ngữ, Ngô
+                                                            Tấn Hoàng Khoa,
+                                                            Trường ĐH Bách khoa
+                                                            TP.HCM đạt điểm
+                                                            tuyệt đối ở ba lần
+                                                            thi TOEIC, giành
+                                                            nhiều học bổng, xin
+                                                            việc làm với mức
+                                                            lương hậu hĩnh ở một
+                                                            hãng hàng không khi
+                                                            chưa tốt nghiệp.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="col-xs-12 col-sm-12 col-md-4"
+                                        >
+                                            <a href="">
+                                                <div
+                                                    class="card mb-4"
+                                                    style="width: 16rem"
+                                                >
+                                                    <img
+                                                        height="145"
+                                                        class="card-img-top"
+                                                        src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2021/07/Anh-1-300x219.jpg"
+                                                    />
+                                                    <div
+                                                        class="
+                                                            card-body
+                                                            text-center
+                                                        "
+                                                    >
+                                                        <h5 class="card-title">
+                                                            Nam sinh Bách khoa 3
+                                                            lần đạt điểm TOEIC
+                                                            tuyệt đối
+                                                        </h5>
+                                                        <div
+                                                            class="is-divider"
+                                                        ></div>
+                                                        <p class="card-text">
+                                                            Vượt qua định kiến
+                                                            sinh viên kỹ thuật
+                                                            yếu ngoại ngữ, Ngô
+                                                            Tấn Hoàng Khoa,
+                                                            Trường ĐH Bách khoa
+                                                            TP.HCM đạt điểm
+                                                            tuyệt đối ở ba lần
+                                                            thi TOEIC, giành
+                                                            nhiều học bổng, xin
+                                                            việc làm với mức
+                                                            lương hậu hĩnh ở một
+                                                            hãng hàng không khi
+                                                            chưa tốt nghiệp.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3">
+                            <div class="sidebar-top">
+                                <div class="post-sidebar mb-4">
+                                    <div
+                                        class="fb-page"
+                                        data-href="https://www.facebook.com/langfvn"
+                                        data-hide-cover="false"
+                                        data-show-facepile="false"
+                                    ></div>
+                                </div>
+                                <div class="post-sidebar mb-4">
+                                    <span>Siêu Sale Shopee</span>
+                                    <div class="is-divider"></div>
+                                    <a href="#"
+                                        ><img
+                                            src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2020/10/5216727_SeaTalk_IMG_1604994750.jpg"
+                                    /></a>
+                                </div>
+                                <div class="post-sidebar mb-4">
+                                    <span>NHƯỢNG QUYỀN</span>
+                                    <div class="is-divider"></div>
+                                    <a href="#"
+                                        ><img
+                                            src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2020/11/Design1.png"
+                                    /></a>
+                                </div>
+                            </div>
+                            <div class="sidebar-bottom">
+                                <h2 class="title">
+                                    <span>Bài nổi bật</span>
+                                </h2>
+                                <div class="is-divider"></div>
+                                <div class="row mb-3">
+                                    <div class="col-xs-12 col-sm-12 col-md-4">
+                                        <a href="#" class="d-block mb-1"
+                                            ><img
+                                                src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2020/10/1-1-150x150.jpg"
+                                                width="80"
+                                                height="80"
+                                        /></a>
+                                        <span>(356)</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-8">
+                                        <a href="">
+                                            <h6>
+                                                LÀNG ĐẠI HỌC THỦ ĐỨC GỒM NHỮNG
+                                                TRƯỜNG NÀO? TRƯỜNG NÀO? TRƯỜNG
+                                                NÀO?
+                                            </h6>
+                                            <span>October 6, 2020</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-xs-12 col-sm-12 col-md-4">
+                                        <a href="#" class="d-block mb-1"
+                                            ><img
+                                                src="https://www.langf.vn/cam-nang-lang-dai-hoc/wp-content/uploads/2020/10/1-1-150x150.jpg"
+                                                width="80"
+                                                height="80"
+                                        /></a>
+                                        <span>(316)</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-8">
+                                        <a href="">
+                                            <h6>
+                                                LÀNG ĐẠI HỌC THỦ ĐỨC GỒM NHỮNG
+                                                TRƯỜNG NÀO?
+                                            </h6>
+                                            <span>October 6, 2020</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--*************************content***************************-->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <h5 class="fit-footer">
+                                <span>GIỚI THIỆU</span>
+                            </h5>
+                            <h6>Công ty trách TNHH HAT</h6>
+                            <div class="video">
+                                <iframe
+                                    width="70%"
+                                    height="160"
+                                    src="https://www.youtube.com/embed/mFvt_-MHRss"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <h5 class="fit-footer">
+                                <span>LIÊN HỆ</span>
+                                <ul style="padding-left: 0px">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        999 Hoàng Diệu 2, Linh Trung, TP Thủ
+                                        Đức.
+                                    </li>
+                                    <li>
+                                        <i class="far fa-envelope"></i>
+                                        HAT999@gmail.com
+                                    </li>
+                                </ul>
+                            </h5>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <h5 class="fit-footer">
+                                <span>THỐNG KÊ TRUY CẬP</span>
+                                <div class="thong-ke">
+                                    <p>Đang online: 5</p>
+                                    <p>Lượt truy cập hôm nay: 15</p>
+                                    <p>Tổng lượt truy cập:999</p>
+                                </div>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row"
+                    style="
+                        width: 100%;
+                        height: 30px;
+                        background-color: #ae1111;
+                        display: flex;
+                    "
+                >
+                    <span style="margin: auto; color: #d9d3d3"
+                        >copyright@2021.HAT</span
+                    >
+                </div>
+            </div>
+        </div>
+        <!-----------------load script----------------->
+        <!--bootstrap css-->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <!--bootstrap js-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- nhúng Jquery-->
+        <script src="./assets/js/ScriptNews.js"></script>
+    </body>
+</html>
